@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInstaKitty.Pages.Sobre"
+             NavigationPage.HasNavigationBar="False">
+    
+    <VerticalStackLayout BackgroundColor="#FEC6E4">
+        
+        <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" WidthRequest="1000" HeightRequest="60">
+            <ImageButton x:Name="btnHome" Clicked="btnHome_Clicked"  WidthRequest="40" Source="icon.svg" Margin="10" ></ImageButton>
+            <Label Text="Hello_Kitty123" Margin="0, 20, 0, 10"></Label>
+        </HorizontalStackLayout> 
+        <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#fec6E4" >
+            <Label WidthRequest="20"></Label>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" Margin="15" WidthRequest="350" HeightRequest="60">
+            <Label Text="Sobre:" Margin="10, 15, 0, 10" FontAttributes="Bold" FontSize="20"></Label>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#fec6E4" >
+            <Label HeightRequest="1"></Label>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" Margin="15,0,0,10" WidthRequest="350" HeightRequest="500">
+            <Label Text="O aplicativo Insta Kitty é uma adorável e divertida plataforma inspirada na famosa personagem Hello Kitty.Com uma interface colorida e cheia de elementos fofos, o app oferece aos fãs da Hello Kitty a oportunidade de compartilhar momentos, conectar-se com amigos e explorar conteúdos relacionados à marca de uma maneira única e encantadora. Desde postagens de fotos e vídeos até stickers e filtros exclusivos, o Insta Kitty proporciona uma experiência cativante e divertida para os amantes dessa icônica personagem." Margin="10, 15, 0, 10" WidthRequest="320"  FontSize="15"></Label>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

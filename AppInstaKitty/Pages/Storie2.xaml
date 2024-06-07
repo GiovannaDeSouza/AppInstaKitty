@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInstaKitty.Pages.Storie2"
+             BackgroundColor="#FEC6E4"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" WidthRequest="1000" HeightRequest="60">
+            <ImageButton x:Name="btnHome" Clicked="btnHome_Clicked"  WidthRequest="40" Source="icon.svg" Margin="10" ></ImageButton>
+            <Label Text="Hello_Kitty123" Margin="0, 20, 0, 10"></Label>
+        </HorizontalStackLayout>
+        
+        
+        <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FEC6E4" WidthRequest="1000" HeightRequest="45">
+            <Label Text="Mymelody_panqueca" Margin="0, 20, 0, 0" TextColor="#FEC6E4"></Label>
+
+        </HorizontalStackLayout>
+
+
+        <VerticalStackLayout Margin="10,0,10,0">
+          <ContentView x:Name="user1" IsVisible="true">
+            <HorizontalStackLayout HorizontalOptions="Center" BackgroundColor="#FF59B2" WidthRequest="290">
+                <Image WidthRequest="40" Source="iconb.svg" Margin="10" ></Image>
+                <Label Text="BadMaru_07" Margin="0, 20, 0, 0"></Label>
+
+            </HorizontalStackLayout>
+          </ContentView>
+        
+
+        <ContentView x:Name="user2" IsVisible="false">
+             <HorizontalStackLayout HorizontalOptions="Center" BackgroundColor="#FF59B2" WidthRequest="290">
+                <Image WidthRequest="40" Source="iconf.svg" Margin="10" ></Image>
+                <Label Text="KeroppopiFrog" Margin="0, 20, 0, 0"></Label>
+             </HorizontalStackLayout>
+          </ContentView>
+            
+          <ContentView x:Name="user3" IsVisible="false">
+             <HorizontalStackLayout HorizontalOptions="Center" BackgroundColor="#FF59B2" WidthRequest="290">
+                <Image WidthRequest="40" Source="icomcc.svg" Margin="10" ></Image>
+                <Label Text="ChoccoCatinho" Margin="0, 20, 0, 0"></Label>
+             </HorizontalStackLayout>
+          </ContentView>
+
+            <ContentView x:Name="user4" IsVisible="false">
+                <HorizontalStackLayout HorizontalOptions="Center" BackgroundColor="#FF59B2" WidthRequest="290">
+                    <Image WidthRequest="40" Source="iconm.svg" Margin="10" ></Image>
+                    <Label Text="Mymelody_panqueca" Margin="0, 20, 0, 0"></Label>
+                </HorizontalStackLayout>
+            </ContentView>
+
+            <ContentView x:Name="user5" IsVisible="false">
+                <HorizontalStackLayout HorizontalOptions="Center" BackgroundColor="#FF59B2" WidthRequest="290">
+                    <Image WidthRequest="40" Source="iconcm.svg" Margin="10" ></Image>
+                    <Label Text="cinamondecanela" Margin="0, 20, 0, 0"></Label>
+                </HorizontalStackLayout>
+            </ContentView>
+
+            <ContentView x:Name="user6" IsVisible="false">
+                <HorizontalStackLayout HorizontalOptions="Center" BackgroundColor="#FF59B2" WidthRequest="290">
+                    <Image WidthRequest="40" Source="iconp.svg" Margin="10" ></Image>
+                    <Label Text="Pompomzinho" Margin="0, 20, 0, 0"></Label>
+                </HorizontalStackLayout>
+            </ContentView>
+
+            <HorizontalStackLayout>
+              
+              <ImageButton x:Name="btnVoltar" Clicked="btnVoltar_Clicked" Source="l1" WidthRequest="35"></ImageButton>
+              <ContentView x:Name="Storie1" IsVisible="true">
+               <VerticalStackLayout >
+                <Image  WidthRequest="290"  Source="storiek.png"></Image>
+               </VerticalStackLayout>
+              </ContentView>
+            
+             <ContentView x:Name="Stori2" IsVisible="false">
+               <VerticalStackLayout >
+                  <Image  WidthRequest="290"  Source="storief.png"></Image>
+               </VerticalStackLayout>
+             </ContentView>
+              
+            <ContentView x:Name="Storie3" IsVisible="false">
+             <VerticalStackLayout >
+                <Image  WidthRequest="290"  Source="storiecc.png"></Image>
+             </VerticalStackLayout>
+            </ContentView>
+              
+            <ContentView x:Name="Storie4" IsVisible="false">
+             <VerticalStackLayout >
+                <Image  WidthRequest="290"  Source="storiem.png"></Image>
+             </VerticalStackLayout>
+            </ContentView>
+
+                <ContentView x:Name="Storie5" IsVisible="false">
+                    <VerticalStackLayout >
+                        <Image  WidthRequest="290"  Source="storiecr.png"></Image>
+                    </VerticalStackLayout>
+                </ContentView>
+
+              <ContentView x:Name="Storie6" IsVisible="false">
+                <VerticalStackLayout >
+                    <Image  WidthRequest="290"  Source="storiepr.png"></Image>
+                </VerticalStackLayout>
+              </ContentView>
+
+                <ImageButton x:Name="btnPassar" HorizontalOptions="End" Clicked="btnPassar_Clicked" Source="l2" WidthRequest="36"></ImageButton>
+
+
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="#FF59B2" WidthRequest="290" >
+                <HorizontalStackLayout Margin="10">
+                    <Frame BackgroundColor="#FC85C5" BorderColor="#FC85C5" CornerRadius="30" HeightRequest="40" WidthRequest="40">
+                        <ImageButton x:Name="enviar" Clicked="enviar_Clicked" WidthRequest="18" HeightRequest="20" Source="enviarcoment.svg"></ImageButton>
+                    </Frame>
+                    <Frame BackgroundColor="#FC85C5" BorderColor="#FC85C5" CornerRadius="30" HeightRequest="40" WidthRequest="190">
+                        <Entry x:Name="coments" BackgroundColor="#FC85C5" WidthRequest="180" HeightRequest="30" Keyboard="Text" FontSize="10" TextColor="Black"></Entry>
+
+                    </Frame>
+
+         
+                    <Image  x:Name="iconImage5" Source="like.svg" WidthRequest="40" HeightRequest="30" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </HorizontalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+        
+        
+        
+    </VerticalStackLayout>
+</ContentPage>

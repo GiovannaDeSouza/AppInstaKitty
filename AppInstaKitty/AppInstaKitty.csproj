@@ -1,0 +1,158 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
+
+		<!-- Note for MacCatalyst:
+		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
+		When specifying both architectures, use the plural <RuntimeIdentifiers> instead of the singular <RuntimeIdentifier>.
+		The Mac App Store will NOT accept apps with ONLY maccatalyst-arm64 indicated;
+		either BOTH runtimes must be indicated or ONLY macatalyst-x64. -->
+		<!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
+
+		<OutputType>Exe</OutputType>
+		<RootNamespace>AppInstaKitty</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Display name -->
+		<ApplicationTitle>AppInstaKitty</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.appinstakitty</ApplicationId>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" BackgroundColor="#FEC6E4"  />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FEC6E4" BaseSize="511,160" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Pages\Storie1.xaml.cs" />
+	  <Compile Remove="Pages\Storie3.xaml.cs" />
+	  <Compile Remove="Pages\Storie4.xaml.cs" />
+	  <Compile Remove="Pages\Storie5.xaml.cs" />
+	  <Compile Remove="Pages\Storie6.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\calculator.svg" />
+	  <MauiImage Remove="Resources\Images\dotnet_bot.png" />
+	  <MauiImage Remove="Resources\Images\iconcc.svg" />
+	  <MauiImage Remove="Resources\Images\like.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="Pages\Storie1.xaml" />
+	  <MauiXaml Remove="Pages\Storie3.xaml" />
+	  <MauiXaml Remove="Pages\Storie4.xaml" />
+	  <MauiXaml Remove="Pages\Storie5.xaml" />
+	  <MauiXaml Remove="Pages\Storie6.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\about.svg" />
+	  <None Remove="Resources\Images\calculator.svg" />
+	  <None Remove="Resources\Images\comnt.svg" />
+	  <None Remove="Resources\Images\comp.svg" />
+	  <None Remove="Resources\Images\dotnet_bot.png" />
+	  <None Remove="Resources\Images\emoji.svg" />
+	  <None Remove="Resources\Images\enviarcoment.svg" />
+	  <None Remove="Resources\Images\fotob.png" />
+	  <None Remove="Resources\Images\fotok.png" />
+	  <None Remove="Resources\Images\fotom.png" />
+	  <None Remove="Resources\Images\home.svg" />
+	  <None Remove="Resources\Images\icomcc.svg" />
+	  <None Remove="Resources\Images\icon.png" />
+	  <None Remove="Resources\Images\iconb.svg" />
+	  <None Remove="Resources\Images\iconcc.svg" />
+	  <None Remove="Resources\Images\iconcm.svg" />
+	  <None Remove="Resources\Images\iconf.svg" />
+	  <None Remove="Resources\Images\iconk.svg" />
+	  <None Remove="Resources\Images\iconm.svg" />
+	  <None Remove="Resources\Images\iconp.svg" />
+	  <None Remove="Resources\Images\l1.svg" />
+	  <None Remove="Resources\Images\l2.svg" />
+	  <None Remove="Resources\Images\like.png" />
+	  <None Remove="Resources\Images\like.svg" />
+	  <None Remove="Resources\Images\like2.svg" />
+	  <None Remove="Resources\Images\logo.svg" />
+	  <None Remove="Resources\Images\perfil.svg" />
+	  <None Remove="Resources\Images\sair.svg" />
+	  <None Remove="Resources\Images\storiecc.png" />
+	  <None Remove="Resources\Images\storiecr.png" />
+	  <None Remove="Resources\Images\storief.png" />
+	  <None Remove="Resources\Images\storiek.png" />
+	  <None Remove="Resources\Images\storiem.png" />
+	  <None Remove="Resources\Images\storiepr.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AjaxControlToolkit" Version="20.1.0" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Pages\Storie2.xaml.cs">
+	    <DependentUpon>Storie2.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Pages\EditsUsuarioPages.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Perfil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Sair.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Sobre.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Storie2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+</Project>

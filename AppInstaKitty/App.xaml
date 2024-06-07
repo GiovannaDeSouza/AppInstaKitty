@@ -1,0 +1,40 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppInstaKitty"
+             xmlns:Paginas="clr-namespace:AppInstaKitty.Pages"
+             x:Class="AppInstaKitty.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="tituloCor">#FF59B2</Color>
+            <Color x:Key="BackgroundColor">#FF59B2</Color>
+            
+            <Style TargetType="ShellContent" x:Key="TituloStyle">
+                
+                <Setter Property="Shell.TitleColor" Value="{StaticResource tituloCor}"></Setter>
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource BackgroundColor}"></Setter>
+            </Style>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+    <Application.MainPage>
+        <Shell FlyoutBehavior="Flyout" FlyoutHeaderBehavior="Fixed" FlyoutBackgroundColor="#FF59B2" >
+            <FlyoutItem Title="Home" Icon="home.svg">
+                <ShellContent ContentTemplate="{DataTemplate Paginas:HomePage}" Style="{StaticResource TituloStyle}"></ShellContent>
+            </FlyoutItem>
+            <FlyoutItem Title="Sobre" Icon="about.svg">
+                <ShellContent ContentTemplate="{DataTemplate Paginas:Sobre}" Style="{StaticResource TituloStyle}"></ShellContent>
+            </FlyoutItem>
+            <FlyoutItem Title="Perfil" Icon="perfil.svg" >
+                <ShellContent ContentTemplate="{DataTemplate Paginas:Perfil}" Style="{StaticResource TituloStyle}"></ShellContent>
+            </FlyoutItem> 
+            <FlyoutItem Title="Sair" Icon="sair.svg" >
+                <ShellContent ContentTemplate="{DataTemplate Paginas:Sair}" Style="{StaticResource TituloStyle}"></ShellContent>
+            </FlyoutItem> 
+            
+        </Shell>
+    </Application.MainPage>
+</Application>

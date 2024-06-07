@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInstaKitty.Pages.LoginPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             
+             BackgroundColor="#FEC6E4"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#FEC6E4"/>
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout Margin="15" Padding="15" Spacing="5">
+        <Image HeightRequest="250" WidthRequest="350" Source="logo.svg" />
+
+        
+        <Label x:Name="lblEmail" Text="Email" TextColor="Black" FontSize="Subtitle"/>
+        <Border>
+            <Entry x:Name="txtEmail"  Keyboard="Email" BackgroundColor="White" TextColor="Black"/>
+        </Border>
+
+        <Label x:Name="lblSenha" Text="Senha" FontSize="Subtitle" TextColor="Black"/>
+        <Border BackgroundColor="#E500C1"  >
+            <Entry x:Name="txtSenha"  IsPassword="True" IsEnabled="True" BackgroundColor="white" TextColor="Black" />
+        </Border >
+
+        <HorizontalStackLayout HorizontalOptions="Center" Padding="15" >
+        <Button x:Name="btnEntrar" Clicked="btnEntrar_Clicked" Text="Entrar" TextColor="White" WidthRequest="100" BackgroundColor="#FF008A" Margin="0, 0, 10, 0"  />
+        <Button x:Name="btnRegistrar" Clicked="btnRegistrar_Clicked" Text="Registrar" TextColor="White" WidthRequest="100" BackgroundColor="#FF008A" />
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+
+    
+</ContentPage>

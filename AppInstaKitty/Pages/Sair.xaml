@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInstaKitty.Pages.Sair"
+             BackgroundColor="#FEC6E4"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout VerticalOptions="Center">
+        <Image Source="logo.svg"></Image>
+        <Button Text="Voltar" x:Name="btnVoltar" Clicked="btnVoltar_Clicked" TextColor="white" WidthRequest="100" BackgroundColor="#FF008A"></Button>
+    </VerticalStackLayout>
+</ContentPage>

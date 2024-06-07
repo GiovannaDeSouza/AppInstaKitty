@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInstaKitty.Pages.HomePage"
+             BackgroundColor="#FEC6E4"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+    <ScrollView>
+        
+       <VerticalStackLayout>
+            
+          <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" WidthRequest="1000" HeightRequest="60">
+            
+            <ImageButton x:Name="BtnHome" Clicked="BtnHome_Clicked" WidthRequest="40" Source="icon.svg" Margin="10" ></ImageButton>
+                <Label Text="Hello_Kitty123" Margin="0, 20, 0, 10"></Label>
+
+            </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            
+          <ImageButton x:Name="btnVlt" Clicked="btnVlt_Clicked" Source="l1.svg" WidthRequest="30" Margin="10"></ImageButton>
+            
+          <ContentView x:Name="Content1" IsVisible="True">
+              
+            <HorizontalStackLayout HorizontalOptions="Start" Margin="0" HeightRequest="60">
+                <ImageButton Source="iconb.svg" x:Name="btnStorie2" Clicked="btnStorie2_Clicked_1"  WidthRequest="50" Margin="10"></ImageButton>
+                <ImageButton Source="iconf.svg" x:Name="btnStorie3" Clicked="btnStorie3_Clicked"  WidthRequest="50" Margin="10"></ImageButton>
+                <ImageButton Source="icomcc.svg" x:Name="btnStorie4" Clicked="btnStorie4_Clicked"  WidthRequest="50" Margin="10"></ImageButton>
+                <ImageButton Source="iconm.svg" x:Name="btnStorie1" Clicked="btnStorie1_Clicked"  WidthRequest="50" Margin="10"></ImageButton>
+            </HorizontalStackLayout>
+              
+          </ContentView>
+          <ContentView x:Name="Content2" IsVisible="false">
+
+             <HorizontalStackLayout HorizontalOptions="Start" Margin="0" HeightRequest="60">
+                <Label BackgroundColor="#FEC6E4" WidthRequest="20"></Label>
+                <ImageButton x:Name="btnStorie5" Clicked="btnStorie5_Clicked"  Source="iconcm.svg" WidthRequest="50" Margin="10"></ImageButton>
+                <Label BackgroundColor="#FEC6E4" WidthRequest="20" Margin="10"></Label>
+                <Label BackgroundColor="#FEC6E4" WidthRequest="20" Margin="10"></Label>
+                <ImageButton Source="iconp.svg" x:Name="bntStorie6" Clicked="bntStorie6_Clicked" WidthRequest="50" Margin="10"></ImageButton>
+                <Label BackgroundColor="#FEC6E4" WidthRequest="20" Margin="10"></Label>
+             </HorizontalStackLayout>
+
+          </ContentView>
+
+                <ImageButton x:Name="btnIr" Clicked="btnIr_Clicked" Source="l2.svg" WidthRequest="31" Margin="10" ></ImageButton>
+            
+        </HorizontalStackLayout>
+
+          <VerticalStackLayout Margin="10,10,10,10">
+            <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" WidthRequest="360" HeightRequest="60">
+                    <ImageButton  WidthRequest="40" Margin="10" Source="iconm.svg"  ></ImageButton>
+                <Label Text="Mymelody_panqueca" Margin="0, 20, 0, 10"></Label>
+
+            </HorizontalStackLayout>
+            <VerticalStackLayout >
+                <Image WidthRequest="361" Source="fotom.png"></Image>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" WidthRequest="362">
+                <Image x:Name="iconImage" Source="like.svg" WidthRequest="40" HeightRequest="30">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image WidthRequest="25" Source="comnt.svg" Margin="0, 10, 10, 10"></Image>
+                <Image WidthRequest="25" Source="comp.svg"></Image>
+            </HorizontalStackLayout>
+          </VerticalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FEC6E4" WidthRequest="200" HeightRequest="20">
+                <Label Text="Kurumi1243" Margin="0, 20, 0, 10" TextColor="#FEC6E4"></Label>
+            </HorizontalStackLayout>
+          <VerticalStackLayout Margin="10,10,10,10">
+            <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2"  WidthRequest="360" HeightRequest="60">
+                    <ImageButton  WidthRequest="40" Margin="10" Source="iconk.svg"></ImageButton>
+                    <Label Text="Kurumi1243" Margin="0, 20, 0, 10"></Label>
+
+            </HorizontalStackLayout>
+            <VerticalStackLayout >
+                <Image WidthRequest="361" Source="fotok.png"></Image>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" WidthRequest="362">
+                    <Image x:Name="iconImage2"  Source="like.svg" WidthRequest="40" HeightRequest="30">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image WidthRequest="25" Source="comnt.svg" Margin="0, 10, 10, 10"></Image>
+                <Image WidthRequest="25" Source="comp.svg"></Image>
+            </HorizontalStackLayout>
+          </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="10,10,10,10">
+                <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" WidthRequest="360">
+                    <Image WidthRequest="40" Source="iconb.svg" Margin="10" ></Image>
+                    <Label Text="BadMaru_07" Margin="0, 20, 0, 10"></Label>
+
+                </HorizontalStackLayout>
+                <VerticalStackLayout >
+                    <Image WidthRequest="361" Source="fotob.png"></Image>
+                </VerticalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" WidthRequest="362">
+                    <Image x:Name="iconImage3"  Source="like.svg" WidthRequest="40" HeightRequest="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image WidthRequest="25" Source="comnt.svg" Margin="0, 10, 10, 10"></Image>
+                    <Image WidthRequest="25" Source="comp.svg"></Image>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+       </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

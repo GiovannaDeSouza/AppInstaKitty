@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInstaKitty.Pages.Perfil"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout BackgroundColor="#FEC6E4">
+        <HorizontalStackLayout HorizontalOptions="Start" BackgroundColor="#FF59B2" WidthRequest="1000" HeightRequest="60">
+
+            <ImageButton x:Name="BtnHome" Clicked="BtnHome_Clicked_1"  WidthRequest="40" Source="icon.svg" Margin="10" ></ImageButton>
+            <Label Text="Hello_Kitty123" Margin="0, 20, 0, 10"></Label>
+
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label WidthRequest="500"></Label>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Padding="15">
+            <HorizontalStackLayout WidthRequest="350" HeightRequest="150"  BackgroundColor="#FE64B7">
+                
+                <ImageButton Source="icon.png" x:Name="ftPerfil" Aspect="AspectFit" Margin="10" CornerRadius="50" HeightRequest="90" WidthRequest="90" ></ImageButton>
+
+                <Grid>
+                    <Grid Row="2" Margin="0,15,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                    <HorizontalStackLayout>
+                        <Grid>
+                        <Image Source="emoji.svg"  WidthRequest="20"></Image>
+                        </Grid>
+                        <Grid>
+                        <Image Source="emoji.svg" WidthRequest="20"></Image>
+                        </Grid>
+                        <Grid>
+                        <Image Source="emoji.svg" WidthRequest="20"></Image>
+                        </Grid>
+                        <Grid>
+                         <Image Source="emoji.svg" WidthRequest="20"></Image>
+                        </Grid>
+                     </HorizontalStackLayout>
+                    </Grid>
+                    <Grid>
+                  <VerticalStackLayout  HorizontalOptions="Start">
+                    <Label Margin="0, 50" FontSize="Small" Text="{Binding Nome}"></Label>
+                  </VerticalStackLayout>
+                 </Grid>
+                </Grid>
+                <VerticalStackLayout>
+                <Frame BackgroundColor="#F50083" CornerRadius="20" WidthRequest="120" HeightRequest="30" Margin="20,20,0, 10" BorderColor="Transparent">
+                    <Label Text="Posts:             0" HorizontalOptions="Center" TextColor="Black" WidthRequest="100" HeightRequest="30" BackgroundColor="#F50083"></Label>
+                </Frame>
+                <Frame BackgroundColor="#F50083" CornerRadius="20" WidthRequest="120" HeightRequest="30" Margin="20,0,0, 0" BorderColor="Transparent">
+                    <Label Text="Seguidores:   0" HorizontalOptions="Center" TextColor="Black" WidthRequest="100" HeightRequest="30" BackgroundColor="#F50083"></Label>
+                </Frame>
+                <Frame BackgroundColor="#F50083" CornerRadius="20" WidthRequest="120" HeightRequest="30" Margin="20,10,0, 0" BorderColor="Transparent">
+                    <Label Text="Seguindo:       0" HorizontalOptions="Center" TextColor="Black" WidthRequest="100" HeightRequest="30" BackgroundColor="#F50083"></Label>
+                </Frame>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Margin="15" BackgroundColor="#FF59B2" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Margin="120, 150" FontSize="Large" WidthRequest="350" HeightRequest="50"  Text="SEM POSTS"></Label>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

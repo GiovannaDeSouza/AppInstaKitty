@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AppInstaKitty.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppInstaKitty"
+    xmlns:pages="clr-namespace:AppInstaKitty.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.FlyoutBackgroundColor="#FF59B2"
+    >
+
+    <Shell.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="titulocor">#FFFFFF</Color>
+            <Style TargetType="FlyoutItem">
+                <Setter Property="Shell.BackgroundColor" Value="#FF59B2" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                
+                
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <FlyoutItem Title="Home" Icon="home.svg">
+        <ShellContent Route="HomePage" ContentTemplate="{DataTemplate pages:HomePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Perfil" Icon="perfil.svg">
+        <ShellContent Route="Perfil" ContentTemplate="{DataTemplate pages:Perfil}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Sobre" Icon="about.svg">
+        <ShellContent Route="Sobre" ContentTemplate="{DataTemplate pages:Sobre}" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Sair" Icon="sair.svg">
+        <ShellContent Route="Sair" ContentTemplate="{DataTemplate pages:Sair}" />
+    </FlyoutItem>
+</Shell>

@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBE89F-702D-468F-AAD2-088107A92F19}|AppInstaKitty\\AppInstaKitty.csproj|c:\\users\\senai3em\\desktop\\appformativa\\appinstakitty\\appinstakitty\\pages\\sobre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2BBBE89F-702D-468F-AAD2-088107A92F19}|AppInstaKitty\\AppInstaKitty.csproj|solutionrelative:appinstakitty\\pages\\sobre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBE89F-702D-468F-AAD2-088107A92F19}|AppInstaKitty\\AppInstaKitty.csproj|c:\\users\\senai3em\\desktop\\appformativa\\appinstakitty\\appinstakitty\\pages\\perfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BBBE89F-702D-468F-AAD2-088107A92F19}|AppInstaKitty\\AppInstaKitty.csproj|solutionrelative:appinstakitty\\pages\\perfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBE89F-702D-468F-AAD2-088107A92F19}|AppInstaKitty\\AppInstaKitty.csproj|c:\\users\\senai3em\\desktop\\appformativa\\appinstakitty\\appinstakitty\\pages\\perfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2BBBE89F-702D-468F-AAD2-088107A92F19}|AppInstaKitty\\AppInstaKitty.csproj|solutionrelative:appinstakitty\\pages\\perfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBE89F-702D-468F-AAD2-088107A92F19}|AppInstaKitty\\AppInstaKitty.csproj|c:\\users\\senai3em\\desktop\\appformativa\\appinstakitty\\appinstakitty\\appinstakitty.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2BBBE89F-702D-468F-AAD2-088107A92F19}|AppInstaKitty\\AppInstaKitty.csproj|solutionrelative:appinstakitty\\appinstakitty.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BBBE89F-702D-468F-AAD2-088107A92F19}|AppInstaKitty\\AppInstaKitty.csproj|c:\\users\\senai3em\\desktop\\appformativa\\appinstakitty\\appinstakitty\\pages\\sobre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BBBE89F-702D-468F-AAD2-088107A92F19}|AppInstaKitty\\AppInstaKitty.csproj|solutionrelative:appinstakitty\\pages\\sobre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Perfil.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\AppInstaKitty\\Pages\\Perfil.xaml.cs",
+              "RelativeDocumentMoniker": "AppInstaKitty\\Pages\\Perfil.xaml.cs",
+              "ToolTip": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\AppInstaKitty\\Pages\\Perfil.xaml.cs",
+              "RelativeToolTip": "AppInstaKitty\\Pages\\Perfil.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T16:30:26.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppInstaKitty.csproj",
+              "DocumentMoniker": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\AppInstaKitty\\AppInstaKitty.csproj",
+              "RelativeDocumentMoniker": "AppInstaKitty\\AppInstaKitty.csproj",
+              "ToolTip": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\AppInstaKitty\\AppInstaKitty.csproj",
+              "RelativeToolTip": "AppInstaKitty\\AppInstaKitty.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-07T14:24:34.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sobre.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\AppInstaKitty\\Pages\\Sobre.xaml.cs",
+              "RelativeDocumentMoniker": "AppInstaKitty\\Pages\\Sobre.xaml.cs",
+              "ToolTip": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\AppInstaKitty\\Pages\\Sobre.xaml.cs",
+              "RelativeToolTip": "AppInstaKitty\\Pages\\Sobre.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T14:45:26.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sobre.xaml",
+              "DocumentMoniker": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\AppInstaKitty\\Pages\\Sobre.xaml",
+              "RelativeDocumentMoniker": "AppInstaKitty\\Pages\\Sobre.xaml",
+              "ToolTip": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\AppInstaKitty\\Pages\\Sobre.xaml",
+              "RelativeToolTip": "AppInstaKitty\\Pages\\Sobre.xaml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwBUAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-07T14:39:26.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Perfil.xaml",
+              "DocumentMoniker": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\AppInstaKitty\\Pages\\Perfil.xaml",
+              "RelativeDocumentMoniker": "AppInstaKitty\\Pages\\Perfil.xaml",
+              "ToolTip": "C:\\Users\\SENAI3EM\\Desktop\\AppFormativa\\AppInstaKitty\\AppInstaKitty\\Pages\\Perfil.xaml",
+              "RelativeToolTip": "AppInstaKitty\\Pages\\Perfil.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-07T14:27:13.865Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
